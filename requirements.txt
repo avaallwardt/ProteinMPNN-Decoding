@@ -1,0 +1,8 @@
+# Core library and full test suite.
+numpy>=1.23
+
+# Needed only to run against the real model (pip install -e ".[model]").
+# torch>=2.0
+
+# Development.
+# pytest>=7.0
