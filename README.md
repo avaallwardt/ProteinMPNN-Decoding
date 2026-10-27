@@ -1,4 +1,4 @@
-# proteinmpnn-decoding
+# ProteinMPNN Decoding Analysis
 
 ProteinMPNN is a protein-sequence design model that generates an amino acid sequence likely to fold to a given protein backbone structure. It relies on autoregressive decoding, placing amino acids one at a time conditioning on only those amino acids previously placed. Amino acids placed early in the sequence condition on little information, and there is no second-pass of the sequence to validate that. Given the long-range dependencies of amino acids in a protein, I found these aspects of autoregressive decoding unintuitive. I tested various modifications to autoregressive decoding to address these shortcomings, resulting in a 1.5% improvement in native sequence recovery (NSR), the primary metric for ProteinMPNN performance. Changing a separate configuration of autoregressive decoding improved NSR another 2%.
 
